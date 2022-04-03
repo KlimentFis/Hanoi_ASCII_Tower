@@ -110,7 +110,7 @@ void hanoi(int n, int i, int k, int disk)
 
     if (n == 1)
     {
-        std::cout << "Ïåğåìåñòèòå 1 äèñê ñ " << i << " íà " << k << " áàøíş" << std::endl;
+        std::cout << "ĞŸĞµÑ€ĞµĞ¼ĞµÑÑ‚Ğ¸Ñ‚Ğµ 1 Ğ´Ğ¸ÑĞº Ñ " << i << " Ğ½Ğ° " << k << " Ğ±Ğ°ÑˆĞ½Ñ" << std::endl;
         std::cout << std::endl;
         move(i, k);
         show(disk);
@@ -121,7 +121,7 @@ void hanoi(int n, int i, int k, int disk)
     {
         int tmp = 6 - i - k;
         hanoi(n - 1, i, tmp, disk);
-        std::cout << "Ïåğåìåñòèòå 1 äèñê ñ " << i << " íà " << k << " áàøíş" << std::endl;
+        std::cout << "ĞŸĞµÑ€ĞµĞ¼ĞµÑÑ‚Ğ¸Ñ‚Ğµ 1 Ğ´Ğ¸ÑĞº Ñ " << i << " Ğ½Ğ° " << k << " Ğ±Ğ°ÑˆĞ½Ñ" << std::endl;
         std::cout << std::endl;
         move(i, k);
         show(disk);
@@ -135,8 +135,8 @@ int main()
 {
     setlocale(LC_ALL, "Rus");
    
-    std::cout << "Ââåäèòå êîëè÷åñòâî äèñêîâ â Õàíîéñêîé áàøíå: " << std::endl;int disk;std::cin >> disk;    
-    std::cout << "Ââåäèòå ñòàğòîâóş ïîçèöèş Õàíîéñêîé áàøíè: " << std::endl;int start; std::cin >> start;
+    std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ ĞºĞ¾Ğ»Ğ¸Ñ‡ĞµÑÑ‚Ğ²Ğ¾ Ğ´Ğ¸ÑĞºĞ¾Ğ² Ğ² Ğ¥Ğ°Ğ½Ğ¾Ğ¹ÑĞºĞ¾Ğ¹ Ğ±Ğ°ÑˆĞ½Ğµ: " << std::endl;int disk;std::cin >> disk;    
+    std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ ÑÑ‚Ğ°Ñ€Ñ‚Ğ¾Ğ²ÑƒÑ Ğ¿Ğ¾Ğ·Ğ¸Ñ†Ğ¸Ñ Ğ¥Ğ°Ğ½Ğ¾Ğ¹ÑĞºĞ¾Ğ¹ Ğ±Ğ°ÑˆĞ½Ğ¸: " << std::endl;int start; std::cin >> start;
     switch (start)
     {
     case 1:
@@ -153,7 +153,7 @@ int main()
         break;
     }
     
-    std::cout << "Ââåäèòå êîíå÷íóş ïîçèöèş Õàíîéñêîé áàøíè: " << std::endl;int end; std::cin >> end;
+    std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ ĞºĞ¾Ğ½ĞµÑ‡Ğ½ÑƒÑ Ğ¿Ğ¾Ğ·Ğ¸Ñ†Ğ¸Ñ Ğ¥Ğ°Ğ½Ğ¾Ğ¹ÑĞºĞ¾Ğ¹ Ğ±Ğ°ÑˆĞ½Ğ¸: " << std::endl;int end; std::cin >> end;
     system("cls");
     std::cout << std::endl; std::cout << std::endl;
     show(disk);
